@@ -5,11 +5,18 @@ body {
     background-color: #f4f4f4;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
 header {
     background: #333;
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
 }
 
 header h1 {
@@ -17,41 +24,64 @@ header h1 {
     font-size: 2em;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
+header a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    padding: 20px;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section {
-    padding: 40px 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .timeline {
-    margin: 20px 0;
+    border-left: 3px solid #0779e4;
+    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .timeline-item {
-    background: #fff;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 3px solid #0779e4;
+    border-radius: 50%;
 }
 
 .project-list {
@@ -63,7 +93,7 @@ header nav ul li a {
 .project {
     background: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
