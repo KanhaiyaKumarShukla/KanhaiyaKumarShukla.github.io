@@ -3,63 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Kanhaiya Kumar's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>My Portfolio</h1>
+            <h1>Kanhaiya Kumar</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="container" id="home">
-        <div class="content">
-            <h2>Welcome to My Portfolio</h2>
-            <p>This is where you can showcase your projects and skills.</p>
-        </div>
-    </div>
-    <div class="container" id="projects">
-        <div class="content">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-                <a href="#">View Project</a>
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Lakshmi Narain College of Technology & Science</h3>
+                    <p>Computer Science & Engineering - Artificial Intelligence & Machine Learning</p>
+                    <p>2022-2026 | GPA: 8.41/10</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Lyceum International School</h3>
+                    <p>Central Board of Secondary Education, Bihar</p>
+                    <p>2021 | Score: 76/100</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container" id="about">
-        <div class="content">
-            <h2>About Me</h2>
-            <p>Information about yourself.</p>
+    </section>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Wond Mobility</h3>
+                    <p>Android Developer Intern</p>
+                    <p>June 2024 - Present | Bhopal</p>
+                    <ul>
+                        <li>Developed and implemented Android applications utilizing Kotlin, XML, and MVVM architecture.</li>
+                        <li>Successfully completed assessment tests showcasing proficiency in Android development, Firebase, and Geo Fire technologies.</li>
+                        <li>Collaborated with cross-functional teams to refine project requirements, ensuring alignment with business objectives and user needs.</li>
+                        <li>Conducted comprehensive testing and debugging to maintain high-quality code standards and deliver seamless user experiences.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="container" id="contact">
-        <div class="content">
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Personal Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Quick Mart (E-Commerce APP)</h3>
+                    <p>April 2024 - Present</p>
+                    <p>Solely responsible for the entire project lifecycle, from conceptualization to deployment.</p>
+                    <p>Tools & Technologies: Firebase, Kotlin, XML, Retrofit, API, MVVM, Dagger Hilt, Binding</p>
+                    <ul>
+                        <li>Implemented Firebase Authentication, enabling a seamless and secure user authentication process.</li>
+                        <li>Implemented MVVM Architecture, binding within the app, improving maintainability, scalability, efficient management.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Inventory Management System</h3>
+                    <p>May 2024 - June 2024</p>
+                    <p>Developed the backend, implementing authentication, Realtime Database, and Cloud Firestore.</p>
+                    <p>Tools & Technologies: Firebase, Kotlin, XML, Retrofit, MVVM, Dagger Hilt, Binding, Cloud Firestore / Realtime Firebase</p>
+                    <ul>
+                        <li>For retailer, can add, update, delete, edit in real-time about their inventory stock.</li>
+                        <li>Helps in maintaining record of inventory of shops, analysis using graphs, alerts if any item short their quantity, transaction history, and all in real-time.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Earthquake Report</h3>
+                    <p>April 2024 - April 2024</p>
+                    <p>Solely responsible for the entire project lifecycle, from conceptualization to deployment.</p>
+                    <p>Tools & Technologies: Kotlin, XML, HTTPS connection, API, Kotlin coroutine, JSON</p>
+                    <ul>
+                        <li>Provide users with real-time earthquake data and alerts.</li>
+                        <li>Displays crucial information such as location, date, time, and magnitude of recent earthquakes, sourced from reputable seismic monitoring organizations.</li>
+                        <li>Enables users to seamlessly navigate to the epicenter of an earthquake by clicking on the location name, utilizing Google Maps for accurate directions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Technical Skills and Interests</h2>
+            <p><strong>Technical Skills:</strong> C++, Data Structure and Algorithm, Competitive Programming, Object-Oriented Programming, Android Development, Kotlin, XML, MySQL, Firebase, Cloud Firestore, Geo Fire, Realtime Firebase, UI/UX, MVVM Architecture, Git</p>
+            <p><strong>Soft Skills:</strong> Communication, Teamwork, Problem-Solving, Time Management, Adaptability, Critical Thinking, Leadership, Creativity</p>
+            <p><strong>Field of Interest:</strong> Machine Learning, Python</p>
+        </div>
+    </section>
+    <section id="positions" class="section">
+        <div class="container">
+            <h2>Positions of Responsibility</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Volunteer Mentor, CodeBita Coding Club</h3>
+                    <p>2023 - Present</p>
+                    <p>Guided and mentored 1000 students in coding and programming skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Achieved 954th rank in LeetCode coding contest</li>
+                <li>Solved more than 900 DSA questions in C++</li>
+                <li>Participated in more than 40 coding contests</li>
+                <li>LeetCode rating 1810+</li>
+                <li>Top 20 coder in my college on Geeks for Geeks</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
             <h2>Contact</h2>
-            <form action="https://formspree.io/f/{your-form-id}" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="_replyto" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <p>Phone: +91-7645992680</p>
+            <p>Email: <a href="mailto:kanhaiyashukla0.01@gmail.com">kanhaiyashukla0.01@gmail.com</a></p>
+            <p><a href="https://github.com/your-github-username" target="_blank">GitHub Profile</a></p>
+            <p><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn Profile</a></p>
         </div>
-    </div>
+    </section>
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <p>&copy; 2024 Kanhaiya Kumar</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
